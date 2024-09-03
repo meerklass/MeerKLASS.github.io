@@ -1,14 +1,237 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-     <title>MeerKLASS</title>
+<title>MeerKLASS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body id="MK_collab">
 
-<body>
-    <h1>Public web site currently under construction.</h1>
-    <h1>Please note that most repositories in the MeerKLASS Github organization are private and require collaboration membership for access.</h1>
-    <h1>Latest workshop details: <a href="https://sites.google.com/myuwc.ac.za/meerklass2024">MeerKLASS 2024-1</a></h1>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#collab" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Collaboration</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Data</a>
+
+  <a href="#papers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Papers</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    
+  </div>
+  
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#collab" class="w3-bar-item w3-button">Collaboration</a>
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#team" class="w3-bar-item w3-button">Data</a>
+
+    <a href="#papers" class="w3-bar-item w3-button">Papers</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="./images/2018-MeerKAT-5-1030x355.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  
+</div>
+
+
+<!-- Collaboration Container -->
+<div class="w3-container w3-padding w3-center w3-card" id="collab">
+<h2>MeerKLASS Collaboration</h2>
+<p>The MeerKAT radio array based in the Karoo desert in South Africa is a state-of-the-art IM instruments that can be used in a “single-dish” mode to access the large cosmic scales that are not accessible to the interferometer, while achieving massive survey speeds compared to actual single dish telescopes. The MeerKLASS collaboration(MeerKAT Large Area Synoptic Survey) has pioneered the approach of using an entire array in a fast-scanning multi-dish autocorrelation mode. We developed a single-dish analysis pipeline successfully calibrating the dual-polarisation autocorrelation data from 64 dishes using the L-band receivers and 11h of data. We produced accurate maps of point sources and diffuse Galactic emission, extracting its spectral index over a 300 deg2 patch of the sky. We were also able to measure the cosmological clustering signal from MeerKAT intensity maps and WiggleZ galaxies, achieving a 7.7σ detection of the cross-correlation power spectrum in the RFI-free frequency range 1015–973 MHz (0.40 < z < 0.46). Combining all the dishes, we achieved an equivalent single-dish observing time of over 600h, making this one of the most sensitive HI IM observations to date. In 2022 a short pilot observation in the UHF band over the same area was also performed, producing calibrated sky maps over the 550–1050 MHz band and confirming that our pipeline can be successfully applied in the UHF. Ongoing deeper observations in UHF have the goal of producing the first direct measurements of the HI power spectrum over a wide redshift range and detecting the Baryon Acoustic Oscillation (BAO) scale (~150 Mpc) with SNR ≈ 4–8, and making a 2% measurement of the power spectrum on ultra-large (~1 Gpc) scales around the matter-radiation equality peak. </p>
+</div>
+
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>The Team</h2>
+
+<div class="w3-row"><br>
+  <img src="./images/IMG_2709.png" alt="Team photo" style="width:100%">
+</div>
+<div class="w3-half">
+  <h3>Mario Santos - PI<br>
+Aishrila Mazumder <br>
+Amadeus Wild<br>
+Amanda Weltman<br>
+Andrea Rubiola<br>
+Aritra Basu<br>
+Ayodeji Ibitoye<br>
+Brandon Bisschoff<br>
+Brandon Engelbrecht<br>
+Bruce Bassett<br>
+Clive Dickinson<br>
+David Bacon<br>
+Dionysis Karagiannis<br>
+Isabella Paola Carucci<br>
+Jinglan Zheng<br>
+Jingying Wang<br>
+Jose Luis Bernal<br>
+Joseph Mohr<br>
+José Fonseca<br>
+Kavilan Moodley<br>
+Keith Grainge<br>
+
+</h3>
+</div>
+<div class="w3-half">
+  <h3>
+Kenda Knowles<br>
+Kristof Rozgonyi<br>
+Laura Wolz<br>
+Yin-Zhe Ma<br>
+Matthias Hoeft<br>
+Mattia Vaccari<br>
+Mel Irfan<br>
+Oleg Smirnov<br>
+Phil Bull<br>
+Roy Maartens<br>
+Sourabh Paul<br>
+Stefano Camera<br>
+Steven Cunnington<br>
+Stuart Harper<br>
+Tamirat Gebeyehu<br>
+Yi-Chao Li<br>
+Zhaoting Chen<br>
+Alkistis Pourtsidou<br>
+Karin Fornazier<br>
+Matilde Barberi Squarotti<br>
+Siyambonga Matshawule<br>
+Tianyue Chen<br>
+ </h3> 
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="papers">
+<h2>Papers</h2>
+<h4> A list of all MeerKLASS publications can be found in this <a href="https://ui.adsabs.harvard.edu/public-libraries/22LxhsO-TAaJMkjYqtZgIA" > ads library </a> </h4>
+<div class="w3-third">
+<div class="w3-card w3-white">
+  <img src="./images/MKxWiggleZPk.png" alt="HI-galaxy cross-power spectrum" style="width:100%">
+  <div class="w3-container">
+  <h3><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.6262C/abstract">H I intensity mapping with MeerKAT: power spectrum detection in cross-correlation with WiggleZ galaxies</a>a>  </h3>
+  
+  <p>We present a detection of correlated clustering between MeerKAT radio intensity maps and galaxies from the WiggleZ Dark Energy Survey. We find a 7.7σ detection of the cross-correlation power spectrum, the amplitude of which is proportional to the product of the  HI
+  density fraction ( ΩHI),  HI bias ( bHI), and the cross-correlation coefficient (r). We therefore obtain the constraint  ΩHIbHIr=[0.86±0.10(stat)±0.12(sys)]×10−3, at an effective scale of  keff ∼ 0.13hMpc−1
+. The intensity maps were obtained from a pilot survey with the MeerKAT telescope, a 64-dish pathfinder array to the SKA Observatory (SKAO). The data were collected from 10.5 h of observations using MeerKAT's L-band receivers over six nights covering the 11 h field of WiggleZ, in the frequency range 1015-973 MHz (0.400  &lt;z&lt;  0.459 in redshift). This detection is the first practical demonstration of the multidish autocorrelation intensity mapping technique for cosmology. This marks an important milestone in the roadmap for the cosmology science case with the full SKAO.</p>
+  </div>
+  </div>
+</div>
+
+
+
+
+<div class="w3-third">
+<div class="w3-card w3-white">
+  <img src="./images/MKmap.png" alt="MeerKLASS map" style="width:100%">
+  <div class="w3-container">
+  <h3><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.3698W/abstract" target="_blank" rel="noopener noreferrer">H I intensity mapping with MeerKAT: calibration pipeline for multidish autocorrelation observations</a></h3>
+  
+  <p> While most purpose-built 21-cm intensity mapping experiments are close-packed interferometer arrays, general-purpose dish arrays should also be capable of measuring the cosmological 21-cm signal. This can be achieved most efficiently if the array is used as a collection of scanning autocorrelation dishes rather than as an interferometer. As a first step towards demonstrating the feasibility of this observing strategy, we show that we are able to successfully calibrate dual-polarization autocorrelation data from 64 MeerKAT dishes in the L band (856-1712 MHz, 4096 channels), with 10.5 h of data retained from six nights of observing. We describe our calibration pipeline, which is based on multilevel radio frequency interference flagging, periodic noise diode injection to stabilize gain drifts, and an absolute calibration based on a multicomponent sky model. We show that it is sufficiently accurate to recover maps of diffuse celestial emission and point sources over a 10° × 30° patch of the sky overlapping with the WiggleZ 11-h field. The reconstructed maps have a good level of consistency between per-dish maps and external data sets, with the estimated thermal noise limited to 1.4 × the theoretical noise level (~2 mK). The residual maps have rms amplitudes below 0.1 K, corresponding to &lt; 1 per cent
+  of the model temperature. The reconstructed Galactic H I intensity map shows excellent agreement with the Effelsberg-Bonn H I Survey, and the flux of the radio galaxy 4C + 03.18 is recovered to within 3.6 per cent, which demonstrates that the autocorrelation can be successfully calibrated to give the zero-spacing flux and potentially help in the imaging of MeerKAT interferometric data. Our results provide a positive indication towards the feasibility of using MeerKAT and the future Square Kilometre Array to measure the H I intensity mapping signal and probe cosmology on degree scales and above.</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card w3-white">
+  <img src="./images/MeerKLASSPk.png" alt="HI power spectrum forecast" style="width:100%">
+  <div class="w3-container">
+  <h3><a href="https://ui.adsabs.harvard.edu/abs/2016mks..confE..32S/abstract" target="_blank" rel="noopener noreferrer"> A Large Sky Survey with MeerKAT</a></h3>
+  
+  <p>We discuss the ground-breaking science that will be possible with a wide area survey, using
+the MeerKAT telescope, known as MeerKLASS (MeerKAT Large Area Synoptic Survey). The
+current specifications of MeerKAT make it a great fit for cosmological applications, which require
+large volumes. In particular, a large survey over ∼ 4,000 deg2
+for ∼ 4,000 hours will potentially
+provide the first ever measurements of the baryon acoustic oscillations using the 21cm intensity
+mapping technique, with enough accuracy to impose constraints on the nature of dark energy. The
+combination with multi-wavelength data will give unique additional information, such as the first
+constraints on primordial non-Gaussianity using the multi-tracer technique, as well as a better
+handle on foregrounds and systematics. The survey will also produce a large continuum galaxy
+sample down to a depth of 5 µJy in L-band, unmatched by any other concurrent telescope, which
+will allow to study the large-scale structure of the Universe out to high redshifts. Finally, the same
+survey will supply unique information for a range of other science applications, including a large
+statistical investigation of galaxy clusters, and the discovery of rare high-redshift AGN that can be
+used to probe the epoch of reionization as well as produce a rotation measure map across a huge
+swathe of the sky. The MeerKLASS survey will be a crucial step on the road to using SKA1-MID
+for cosmological applications, as described in the top priority SKA key science projects.</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="data">
+<h2>Data</h2>
+ <h4>Our calibrated HI intensity maps are currently not publicly available. We are very open to collaboration and joint projects, so please contact us with your science ideas! </h4>
+ <p> Below, we show a map of our current observations. We have two fields with L-Band observations, and multiple on-going observations in the UHF band.</p>
+
+<div class="w3-row w3-padding"><br>
+  <img src="./images/SurveyFootprints.png" alt="Team photo" style="width:100%">
+</div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="contact">
+<h2>Contact</h2>
+We are very open to collaboration and new members joining our collaboration. Please contact the PI Prof Mario Santos under ... .
+
+Our Collaboration Terms can be found <a href="https://docs.google.com/document/d/1ingp3cd3DcDXLD8VGHgDTXnWa8OCWvUL2QQq1qXADIA/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> here </a>.
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
-
 </html>
