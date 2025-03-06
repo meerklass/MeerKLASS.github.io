@@ -1,44 +1,50 @@
+Mario Santos - PI
+Laura Wolz - Deputy PI
+Jingying Wang - Steering Team
+Joe Mohr - Steering Team
+Keith Grainge - Steering Team
+Marta Spinelli - Steering Team
+Stefano Camera - Steering Team
+
 Aishrila Mazumder
-Amadeus Wild
-Amanda Weltman
-Andrea Rubiola
-Aritra Basu
-Ayodeji Ibitoye
-Brandon Bisschoff
-Brandon Engelbrecht
-Bruce Bassett
-Clive Dickinson
+Alkistis Pourtsidou
+Amadeus Witzemann
+Benedict Bahr-Kalus
+Cyril Tasse
 David Bacon
-Dionysis Karagiannis
+Felicia Setshabe
+Geoff Murphy
+Giulia Piccirilli
+Mathias Hoeft
 Isabella Paola Carucci
-Jinglan Zheng
-Jingying Wang
-Jose Luis Bernal
-Joseph Mohr
+Jiakang Han
 José Fonseca
-Kavilan Moodley
-Keith Grainge
-Kenda Knowles
-Kristof Rozgonyi
-Laura Wolz
-Yin-Zhe Ma
-Mario Santos
-Marta Spinelli
-Matthias Hoeft
-Mattia Vaccari
-Mel Irfan
+José Luis Bernal
+karin silvia franzoni fornazier guimaraes
+Maria Berti
+Matilde Barberi Squarotti
+Matteo Viel
+Melis Irfan 
+Mogamad-Junaid Townsend
+Mosima Portia Masipa
 Oleg Smirnov
 Phil Bull
-Roy Maartens
-Sourabh Paul
-Stefano Camera
-Steven Cunnington
-Stuart Harper
-Tamirat Gebeyehu
-Yi-Chao LI
-Zhaoting Chen
-Alkistis Pourtsidou
-Karin Fornazier
-Matilde Barberi Squarotti
+Piyanat Kittiwisit
+Sarvesh Mangla
+Sefa Pamuk
+Sifiso Mahlalela
 Siyambonga Matshawule
-Tianyue Chen
+Sourabh Paul
+Steve Cunnington
+Suman Chatterjee
+Tamera Kassie
+Tamirat Gogo
+Tianyang Liu
+Tobias Russell
+Victória da Graça Gilberto Samboco
+Wenkai Hu
+Yichao
+Yin-Zhe Ma
+Yu'Er Jiang
+Zhaoting Chen
+Zheng Zhang
