@@ -1,119 +1,179 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>MeerKLASS</title>
-<link rel="icon" href="./images/dish-logo.png">
+  <title>MeerKLASS</title>
+  <link rel="icon" href="./images/dish-logo.png">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="MK_collab" >
+
+<body id="MK_collab">
 
 
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">  
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()" title="Toggle Navigation"><i class="fa fa-bars"></i></a>
-  <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> <img src="./images/meerklass-viridis.png"style="min-height:5px;max-height:17px;" > Home</a>
-  <a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="./HIdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">HI Intensity Mapping Data</a>
-  <a href="./OTFdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">OTF Data</a>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()" title="Toggle Navigation"><i class="fa fa-bars"></i></a>
+      <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> <img
+          src="./images/meerklass-viridis.png" style="min-height:5px;max-height:17px;"> Home</a>
+      <a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+      <a href="./HIdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">HI Intensity Mapping Data</a>
+      <a href="./OTFdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">OTF Data</a>
+      <a href="./glossary.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Glossary</a>
+    </div>
 
-</div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="./index.html" class="w3-bar-item w3-button">  Home</a>
-    <a href="./team.html" class="w3-bar-item w3-button">Team</a>
-     <a href="./HIdata.html" class="w3-bar-item w3-button">HI Intensity Mapping Data</a>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="./index.html" class="w3-bar-item w3-button"> Home</a>
+      <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+      <a href="./HIdata.html" class="w3-bar-item w3-button">HI Intensity Mapping Data</a>
       <a href="./OTFdata.html" class="w3-bar-item w3-button">OTF Data</a>
+      <a href="./glossary.html" class="w3-bar-item w3-button">Glossary</a>
+    </div>
   </div>
-</div>
 
-<div class=" w3-display-container w3-center">
+  <div class=" w3-display-container w3-center">
     <img class="w3-grayscale" src="./images/demo_sky_image.png" style="width:100%;min-height:350px;max-height:800px;">
     <div class="w3-display-left w3-top">
-    <img src="./images/meerklass-viridis.png" style="width:30%;min-height:50px;max-height:200px;"></br>
+      <img src="./images/meerklass-viridis.png" style="width:30%;min-height:50px;max-height:200px;"></br>
       <span class="w3-text-white" style="font-size:30px">MeerKAT Large Area Synoptic Survey</span>
+    </div>
   </div>
-</div>
 
-<!-- start page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-    <div class="w3-container w3-content w3-center" style="max-width:1200px" >
-        
-        <h2>MeerKLASS On-the-Fly Continuum Survey: Data Release 1</h2>
-        <h4 class=w3-justify>The MeerKAT Large Area Synoptic Survey (MeerKLASS) is conducting scanning observations to support HI Intensity Mapping studies in both L and UHF bands.  These scan data can be interferometrically imaged using a new On-the-Fly (OTF) calibration method developed specifically for MeerKLASS and MeerKAT.  In the December 2025 Data Release 1 (DR1) we are releasing 268 deg&sup2 of L-band (856-1712 MHz) and 800 deg&sup2 of UHF band (544-1088 MHz) continuum imaging and associated source catalogs.  </br>
-        The OTF imaging method and the two DR1 datasets are described in the three following publications submitted to MNRAS: <ol>
-        <li><b><a href="https://arxiv.org/abs/2512.11978">The MeerKLASS On-the-Fly Continuum Survey:  Pipeline Design and Validation</b></a>, Chatterjee et al., MNRAS submitted <a href="https://arxiv.org/abs/2512.11978">2512.11978</a>  </li>
-        <li><b><a href="https://arxiv.org/abs/2512.11964">The MeerKLASS UHF On-the-Fly Continuum Survey: Data Release 1</b></a>, Paul et al, MNRAS submitted <a href="https://arxiv.org/abs/2512.11964">2512.11964</a></li>
-        <li> <b><a href="https://arxiv.org/abs/2512.17685">The MeerKLASS L-band On-the-Fly Continuum Survey: Data Release 1 </a></b>, Mangla et al, MNRAS submitted <a href="https://arxiv.org/abs/2512.17685">2512.17685</a></li>
-    
-    </ol>
-        These publications contain all the information needed to support a scientific analysis of these two initial datasets.  We plan to continue with Data Releases (internal in June and public in December) in the coming years 2026-2029, with the goal of making our Stokes I imaging as well as polarization, multi-scale and spectral imaging dataset available to the broader radio community.  Moreover, a new OTF-optimized scanning mode has been introduced at MeerKAT that removes the 2s time smearing effect and therefore reduces the anisotropy of the synthesized beam. </br>
-</h4>
-        <div class="w3-row-padding">
-            
-                 <div class="w3-col l7 12">
-             <!-- Image of location/map -->
-             <img src="./images/Fig1-UHF-mosaic.jpg" class="w3-image" style="width:100%;">
-                <br>
-             <p > Fig. 1: A plot of the sky location of UHF DR1 dataset with zooms into three different sky locations (see Paul et al, Figure 4).
-            </p>
-             <img src="./images/Fig2-UHFsource_comparison.jpg" class="w3-image" style="width:100%;">
-             <p > Fig. 2:  Two giant radio galaxies observed (left to right) in MeerKLASS DR1, RACS-low, NVSS and TGSS (see Paul et al, Figure 10).
-            </p>
-            </div>
-            <div class="w3-col l5 12">
-        <h3>The MeerKLASS scan strategy</h3>
+  <!-- start page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <div class="w3-container w3-content w3-center" style="max-width:1200px">
 
-          <p class=w3-justify>  The MeerKLASS data acquisition strategy involves scanning in azimuth at fixed elevation at a scan rate of 5’/s and with a 5 to 10 degree throw, accumulating single dish and interferometric observations every 2s with 4096 channels within the selected band.  During these scans, the correlator phase center is fixed to the center of the azimuthal scan, and as the Earth rotates the scan covers more sky.  Over a typical 1.5hr observation epoch, a single layer of interferometric imaging is accumulated that covers ~250 deg&sup2 of sky, with calibrator observations taken before and after each scan.  The 10,000 deg&sup2 MeerKLASS survey is subdivided into different sky boxes of this size.  On a typical day both rising and setting scans are observed for a given survey box.  In the L-band survey, 41 epochs were accumulated in a single box, and in the ongoing UHF observations 26 epochs are planned for each sky box.  In DR1 we release the L-band dataset corresponding to 8 epochs or layers of imaging over a single box.  For UHF we release data from multiple sky boxes where the number of epochs varies from 3 to 8.  The depth and data quality of this initial data release meet or exceed those of the recently released Rapid ASKAP Continuum Survey (RACS) -low, -mid and -high.  
-            </p>
-            </div>
-           
+      <h2>MeerKLASS On-the-Fly Continuum Survey: Data Release 1</h2>
+      <h4 class=w3-justify>The MeerKAT Large Area Synoptic Survey (MeerKLASS) is conducting scanning observations to
+        support HI Intensity Mapping studies in both L and UHF bands. These scan data can be interferometrically imaged
+        using a new On-the-Fly (OTF) calibration method developed specifically for MeerKLASS and MeerKAT. In the
+        December 2025 Data Release 1 (DR1) we released 268 deg&sup2 of L-band (856-1712 MHz) and 800 deg&sup2 of
+        UHF band (544-1088 MHz) continuum imaging and associated source catalogs, the data can be accessed via the SARAO
+        archive, <a href="https://doi.org/10.48479/h9k3-7295" target="_blank">UHF band data</a> and <a
+          href="https://doi.org/10.48479/h9k3-7294" target="_blank">L band data</a>. </br>
+        The OTF imaging method and the two DR1 datasets are described in the three following publications submitted to
+        MNRAS: <ol>
+          <li><b><a href="https://arxiv.org/abs/2512.11978">The MeerKLASS On-the-Fly Continuum Survey: Pipeline Design
+                and Validation</b></a>, Chatterjee et al., MNRAS submitted <a
+              href="https://arxiv.org/abs/2512.11978">2512.11978</a> </li>
+          <li><b><a href="https://arxiv.org/abs/2512.11964">The MeerKLASS UHF On-the-Fly Continuum Survey: Data Release
+                1</b></a>, Paul et al, MNRAS submitted <a href="https://arxiv.org/abs/2512.11964">2512.11964</a></li>
+          <li> <b><a href="https://arxiv.org/abs/2512.17685">The MeerKLASS L-band On-the-Fly Continuum Survey: Data
+                Release 1 </a></b>, Mangla et al, MNRAS submitted <a
+              href="https://arxiv.org/abs/2512.17685">2512.17685</a></li>
+
+        </ol>
+        These publications contain all the information needed to support a scientific analysis of these two initial
+        datasets. We plan to continue with Data Releases (internal in June and public in December) in the coming years
+        2026-2029, with the goal of making our Stokes I imaging as well as polarization, multi-scale and spectral
+        imaging dataset available to the broader radio community. Moreover, a new OTF-optimized scanning mode has been
+        introduced at MeerKAT that removes the 2s time smearing effect and therefore reduces the anisotropy of the
+        synthesized beam. </br>
+      </h4>
+      <div class="w3-row-padding">
+
+        <div class="w3-col l7 12">
+          <!-- Image of location/map -->
+          <img src="./images/Fig1-UHF-mosaic.jpg" class="w3-image" style="width:100%;">
+          <br>
+          <p> Fig. 1: A plot of the sky location of UHF DR1 dataset with zooms into three different sky locations (see
+            Paul et al, Figure 4).
+          </p>
+          <img src="./images/Fig2-UHFsource_comparison.jpg" class="w3-image" style="width:100%;">
+          <p> Fig. 2: Two giant radio galaxies observed (left to right) in MeerKLASS DR1, RACS-low, NVSS and TGSS (see
+            Paul et al, Figure 10).
+          </p>
         </div>
-        <div class="w3-row-padding w3-padding-64">
-            <div class="w3-col l5 12">
-            <h3>The UHF-band dataset</h3>
-            <p class=w3-justify> The UHF data (544-1088 MHz) cover a region of 800 deg&sup2 of the sky near the celestial equator (see Figure 1), and the continuum imaging reaches an RMS sensitivity of 35 uJy/beam with a typical resolution of 32”x17”.  The DR1 catalog contains 95,483 radio sources.  Sub-band imaging is carried out at 574, 635, 695, 755, 816, 876, 937, 997 and 1058 MHz, enabling in-band characterization of the radio spectral energy distribution (SED).  Cross-comparisons of astrometry, photometry and source counts to those from previous surveys indicates arcsec scale astrometric offsets from RACS-low, RACS-mid, FIRST and NVSS and 10% to 20% flux offsets from the same.  Source counts are in good agreement with RACS, NVSS and Deep2 down to source fluxes of 1mJy, but suggesting a different character at the faintest fluxes as compared to the Deep2 survey.  
-             Figure 2 shows a comparison of two giant radio galaxies imaged in MeerKLASS UHF DR1 and also in RACS-low, NVSS and TGSS.  The resolution and depth of the MeerKLASS UHF imaging exceeds that of the other three previous surveys.
-            The UHF DR1 dataset is available on request and will be publicly accessible in January 2026.</p>
+        <div class="w3-col l5 12">
+          <h3>The MeerKLASS scan strategy</h3>
 
-            <h3>The L-band dataset </h3>
-            <p class=w3-justify> The L-band data (856-1712 MHz) cover a region of 268 deg&sup2 overlapping the KiDS survey (see Figure 3) and correspond to 16 hrs of observation.  The median RMS noise over this region is 33 uJy/beam with a typical angular resolution of 25.5”x7.8”.  The DR1 catalog container 34,874 radio sources and sub-band imaging in 7 sub-bands.  Cross-comparisons of astrometry, photometry and source counts to those from RACS-low, -mid, -high, NVSS, SUMSS and TGSS indicate arcsec scale astrometric offsets and flux scales in agreement at the 5% level.  Source counts down to 700 uJy show good agreement with RACS-mid down to the faintest fluxes, and therefore lie between RACS-low and the MALS-DR1 and other ultra-deep surveys. 
-            Figure 4 contains the comparison of a giant radio galaxy observing in L-band DR1 as well as in RACS-low, -mid, -high and in NVSS and TGSS.  The achieved depth and the ability to image low surface brightness features in DR1 exceed those of the comparison datasets. 
-            The L-band DR1 dataset is available on request and will be publicly accessible in January 2026.
-            </p>
+          <p class=w3-justify> The MeerKLASS data acquisition strategy involves scanning in azimuth at fixed elevation
+            at a scan rate of 5’/s and with a 5 to 10 degree throw, accumulating single dish and interferometric
+            observations every 2s with 4096 channels within the selected band. During these scans, the correlator phase
+            center is fixed to the center of the azimuthal scan, and as the Earth rotates the scan covers more sky. Over
+            a typical 1.5hr observation epoch, a single layer of interferometric imaging is accumulated that covers ~250
+            deg&sup2 of sky, with calibrator observations taken before and after each scan. The 10,000 deg&sup2
+            MeerKLASS survey is subdivided into different sky boxes of this size. On a typical day both rising and
+            setting scans are observed for a given survey box. In the L-band survey, 41 epochs were accumulated in a
+            single box, and in the ongoing UHF observations 26 epochs are planned for each sky box. In DR1 we release
+            the L-band dataset corresponding to 8 epochs or layers of imaging over a single box. For UHF we release data
+            from multiple sky boxes where the number of epochs varies from 3 to 8. The depth and data quality of this
+            initial data release meet or exceed those of the recently released Rapid ASKAP Continuum Survey (RACS) -low,
+            -mid and -high.
+          </p>
+        </div>
 
-            </div>
-            <div class="w3-col l7 12">
-             <!-- Image of location/map -->
-                <img src="./images/Fig3-OTF_Lband-Fig3.jpg" class="w3-image" style="width:100%;">
-                <p> Fig.3:  A plot of the sky location of the L-band DR1 dataset with zooms into three different sky locations (see Mangla et al, Figure 3).</p>
-                <img src="./images/Fig4-MKLband_comparison_small.jpg" class="w3-image" style="width:100%;">
-                <p> Fig.4: Images of a particular giant radio galaxy in MeerKLASS L, NVSS, TGSS-ADR and RACS-low, -mid and -high (see Mangla et al Figure 6). </p>
-            </div>
-         </div>
-         
+      </div>
+      <div class="w3-row-padding w3-padding-64">
+        <div class="w3-col l5 12">
+          <h3>The UHF-band dataset</h3>
+          <p class=w3-justify> The UHF data (544-1088 MHz) cover a region of 800 deg&sup2 of the sky near the celestial
+            equator (see Figure 1), and the continuum imaging reaches an RMS sensitivity of 35 uJy/beam with a typical
+            resolution of 32”x17”. The DR1 catalog contains 95,483 radio sources. Sub-band imaging is carried out at
+            574, 635, 695, 755, 816, 876, 937, 997 and 1058 MHz, enabling in-band characterization of the radio spectral
+            energy distribution (SED). Cross-comparisons of astrometry, photometry and source counts to those from
+            previous surveys indicates arcsec scale astrometric offsets from RACS-low, RACS-mid, FIRST and NVSS and 10%
+            to 20% flux offsets from the same. Source counts are in good agreement with RACS, NVSS and Deep2 down to
+            source fluxes of 1mJy, but suggesting a different character at the faintest fluxes as compared to the Deep2
+            survey.
+            Figure 2 shows a comparison of two giant radio galaxies imaged in MeerKLASS UHF DR1 and also in RACS-low,
+            NVSS and TGSS. The resolution and depth of the MeerKLASS UHF imaging exceeds that of the other three
+            previous surveys.
+            The UHF DR1 dataset is available <b><a href="https://doi.org/10.48479/h9k3-7295"
+                target="_blank">here</a></b>.</p>
+
+          <h3>The L-band dataset </h3>
+          <p class=w3-justify> The L-band data (856-1712 MHz) cover a region of 268 deg&sup2 overlapping the KiDS survey
+            (see Figure 3) and correspond to 16 hrs of observation. The median RMS noise over this region is 33 uJy/beam
+            with a typical angular resolution of 25.5”x7.8”. The DR1 catalog container 34,874 radio sources and sub-band
+            imaging in 7 sub-bands. Cross-comparisons of astrometry, photometry and source counts to those from
+            RACS-low, -mid, -high, NVSS, SUMSS and TGSS indicate arcsec scale astrometric offsets and flux scales in
+            agreement at the 5% level. Source counts down to 700 uJy show good agreement with RACS-mid down to the
+            faintest fluxes, and therefore lie between RACS-low and the MALS-DR1 and other ultra-deep surveys.
+            Figure 4 contains the comparison of a giant radio galaxy observing in L-band DR1 as well as in RACS-low,
+            -mid, -high and in NVSS and TGSS. The achieved depth and the ability to image low surface brightness
+            features in DR1 exceed those of the comparison datasets.
+            The L-band DR1 dataset is available <b><a href="https://doi.org/10.48479/h9k3-7294"
+                target="_blank">here</a></b>.
+          </p>
+
+        </div>
+        <div class="w3-col l7 12">
+          <!-- Image of location/map -->
+          <img src="./images/Fig3-OTF_Lband-Fig3.jpg" class="w3-image" style="width:100%;">
+          <p> Fig.3: A plot of the sky location of the L-band DR1 dataset with zooms into three different sky locations
+            (see Mangla et al, Figure 3).</p>
+          <img src="./images/Fig4-MKLband_comparison_small.jpg" class="w3-image" style="width:100%;">
+          <p> Fig.4: Images of a particular giant radio galaxy in MeerKLASS L, NVSS, TGSS-ADR and RACS-low, -mid and
+            -high (see Mangla et al Figure 6). </p>
+        </div>
+      </div>
+
     </div>
   </div>
 
 
   <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-     <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="contact">
-<h2>Contact</h2>
-For more details, please contact the PIs or request membership via <a target="_blank"  href="https://airtable.com/app45AQBOJnMiyX8k/pagEmTNiqXNPVSTog/form"> this form </a>.
-</div>
- 
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="contact">
+      <h2>Contact</h2>
+      For more details, please contact the PIs or request membership via <a target="_blank"
+        href="https://airtable.com/app45AQBOJnMiyX8k/pagEmTNiqXNPVSTog/form"> this form </a>.
+    </div>
+
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+      <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
 
 </body>
+
 </html>

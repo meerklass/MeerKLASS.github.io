@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MeerKLASS</title>
+    <link rel="icon" href="./images/dish-logo.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="MK_collab">
+
+
+    <!-- Sidebar on click -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+        id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+            <i class="fa fa-remove"></i>
+        </a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 4</a>
+        <a href="#" class="w3-bar-item w3-button">Link 5</a>
+    </nav>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()" title="Toggle Navigation"><i class="fa fa-bars"></i></a>
+            <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> <img
+                    src="./images/meerklass-viridis.png" style="min-height:5px;max-height:17px;"> Home</a>
+            <a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+            <a href="./HIdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">HI Intensity Mapping
+                Data</a>
+            <a href="./OTFdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">OTF Data</a>
+            <a href="./glossary.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Glossary</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="./index.html" class="w3-bar-item w3-button"> Home</a>
+            <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+            <a href="./HIdata.html" class="w3-bar-item w3-button">HI Intensity Mapping Data</a>
+            <a href="./OTFdata.html" class="w3-bar-item w3-button">OTF Data</a>
+            <a href="./glossary.html" class="w3-bar-item w3-button">Glossary</a>
+        </div>
+    </div>
+
+
+
+    <div class=" w3-display-container w3-center">
+        <img class="w3-grayscale" src="./images/demo_sky_image.png"
+            style="width:100%;min-height:550px;max-height:800px;">
+        <div class="w3-display-left w3-top">
+            <img src="./images/meerklass-viridis.png" style="width:30%;min-height:50px;max-height:200px;"></br>
+            <span class="w3-text-white" style="font-size:30px">MeerKAT Large Area Synoptic Survey</span>
+        </div>
+    </div>
+
+    <!-- start page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px;margin-bottom:46px">
+        <div class="w3-container w3-content " style="max-width:1000px">
+
+            <h2>MeerKLASS Glossary</h2>
+
+            <div class="">
+                <!-- Image of location/map -->
+                <img src="./images/meerklass-XLP-footprint.png" class="w3-image" style="width:100%;">
+                <p> Fig 1. MeerKLASS survey map. Coloured rectangles outline the BOXES/PATCHES. orange/yellow lines show
+                    the SCAN data.
+            </div>
+
+
+
+            <li><b>SCANNING STRATEGY</b> - In MeerKLASS, we operate the dish array in back-and-forth SCANs at constant
+                elevation, for a
+                total of around 90 to 100 minutes. Within each scan, we perform approximately 38 swings (about 2.5 min
+                each). We
+                perform the constant elevation scans during rising and setting sky. As the sky rotates this creates a
+                raster-like
+                scanning pattern in RA and DEC - see orange/red shaded areas in Fig. 1. We repeat scans multiple times
+                (up to 26)
+                over one survey area (BOX/PATCH). The survey speed is 5/7 arcmin / second (L/UHF band). We integrate
+                data every 2
+                seconds. Each scan covers approximately 300 square degrees. Data is only taken 30 minutes after sunset /
+                before
+                sunrise, to minimise atmospheric and ionospheric disturbance. </li>
+            <li><b>SINGLE DISH DATA</b> - auto-correlation data from each of the dish elements of the array, i.e. the
+                diagonal
+                elements of the
+                interferometric visibilities.</li>
+            <li><b>CALIBRATOR SCAN</b> - We perform a calibrator scan before and after each constant elevation scan to a
+                bright
+                calibrator and
+                observe calibrator and 4 points around this for absolute, bandpass calibration and beam calibration.
+            </li>
+            <li><b>NOISE DIODE</b> - We fire the noise diode every 20 seconds for a duration of about 0.6 seconds. Data
+                which
+                includes the
+                noise diode has the label ‘ON’. We only use data without noise diode, i.e. with the label ‘OFF’ in our
+                scientific
+                analysis.</li>
+            <li><b>TIMESTAMPS</b> - We take data every 2 seconds which we also refer to as timestamps.</li>
+            <li><b>BLOCK</b> - One observation is referred to as a data block. This is about 2 - 2.5 hours and includes
+                calibrators. Each block
+                has a unique MeerKAT numerical reference. These are the individual files available to download from the
+                SARAO archive.
+                Sky PATCH - The scan area covered by one observation block. It is about 300 deg2 of sky area and
+                approximately
+                rectangular. We cover each sky patch by about 26 blocks, half (about 13) when the patch is rising and
+                half when it is
+                setting. When setting up observations, each patch is defined with a rectangular shape in ra, dec
+                coordinates. Due to the
+                shape of the scans, the area actually covered will always be larger than the target rectangle. Sky
+                patches overlap, so
+                the total sky area covered is less than the sum of each patch. When analysing an individual patch, we
+                trim the edges
+                because of homogeneous coverage. So the sky area used for cosmology from an individual patch is less
+                than the total sky
+                covered by such patch.</li>
+            <li><b>BOX</b> - (interchangeably used as PATCH). This was the internal name given to each sky patch
+                starting from
+                2024
+                observations: BOX1, BOX2, etc. There are a few sky patches that used a different naming (e.g. DESI1,
+                DESI2, WiggleZ).
+                The sky location of our MeerKLASS BOXes are marked with coloured rectangles in Fig. 1.</li>
+
+            <li><b>SCAN</b> - A scan refers to the constant elevation data taken during one observational block. Often
+                BLOCK
+                and SCAN are used
+                interchangeably, though SCAN technically refers to the science data without the calibration data.</li>
+            <li><b>MAP</b> - Once calibrated, data is projected into sky coordinates (RA/DEC). Data from one frequency
+                channel
+                is referred to
+                as a map.</li>
+            <li><b>CUBE</b> - Once calibrated, data is projected into sky coordinates (RA/DEC). Data from all frequency
+                channels is referred to
+                as a cube.</li>
+            <li><b>OTF</b> - On the Fly Mapping - This refers to the processing pipeline which uses the full visibility
+                measurement set from
+                the constant elevation scans to process the interferometric data into images. The images have high
+                angular resolution
+                (~15 arcsec).</li>
+            <li><b>EPOCH</b> - this term is used by the OTF team interchangeably with BLOCK/SCAN.</li>
+            <li><b>TILE</b> - in the OTF imaging pipeline, the sky area is divided into smaller tiles which are
+                processed
+                individually into
+                images before combining into a large image. Typically, one tile covers an sky area of order of 10 square
+                degrees.</li>
+
+        </div>
+
+
+    </div>
+
+    </div>
+    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+        <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="contact">
+            <h2>Contact</h2>
+            For more details, please contact the PIs or request membership via <a target="_blank"
+                href="https://airtable.com/app45AQBOJnMiyX8k/pagEmTNiqXNPVSTog/form"> this form </a>.
+        </div>
+
+        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+            <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,277 +1,389 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>MeerKLASS</title>
-<link rel="icon" href="./images/dish-logo.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>MeerKLASS</title>
+  <link rel="icon" href="./images/dish-logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="MK_collab" >
+
+<body id="MK_collab">
 
 
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
+  <!-- Sidebar on click -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+      <i class="fa fa-remove"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    <a href="#" class="w3-bar-item w3-button">Link 5</a>
+  </nav>
 
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">  
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()" title="Toggle Navigation"><i class="fa fa-bars"></i></a>
-  <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> <img src="./images/meerklass-viridis.png"style="min-height:5px;max-height:17px;" > Home</a>
-  <a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="./HIdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">HI Intensity Mapping Data</a>
-  <a href="./OTFdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">OTF Data</a>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()" title="Toggle Navigation"><i class="fa fa-bars"></i></a>
+      <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> <img
+          src="./images/meerklass-viridis.png" style="min-height:5px;max-height:17px;"> Home</a>
+      <a href="./team.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+      <a href="./HIdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">HI Intensity Mapping Data</a>
+      <a href="./OTFdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">OTF Data</a>
+      <a href="./glossary.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Glossary</a>
+    </div>
 
-</div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="./index.html" class="w3-bar-item w3-button">  Home</a>
-    <a href="./team.html" class="w3-bar-item w3-button">Team</a>
-     <a href="./HIdata.html" class="w3-bar-item w3-button">HI Intensity Mapping Data</a>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="./index.html" class="w3-bar-item w3-button"> Home</a>
+      <a href="./team.html" class="w3-bar-item w3-button">Team</a>
+      <a href="./HIdata.html" class="w3-bar-item w3-button">HI Intensity Mapping Data</a>
       <a href="./OTFdata.html" class="w3-bar-item w3-button">OTF Data</a>
-
+      <a href="./glossary.html" class="w3-bar-item w3-button">Glossary</a>
+    </div>
   </div>
- </div>
 
 
 
-<!-- Images -->
+  <!-- Images -->
   <div class=" w3-display-container w3-center ">
-    <img class="w3-grayscale" src="./images/2018-MeerKAT-3-1030x509.jpg" style="width:100%;min-height:500px;max-height:800px;">
+    <img class="w3-grayscale" src="./images/2018-MeerKAT-3-1030x509.jpg"
+      style="width:100%;min-height:500px;max-height:800px;">
     <div class="w3-display-left ">
-      <img src="./images/meerklass-viridis.png" style="min-width:30%; max-width:40%; min-height:50px;max-height:200px;"></br>
+      <img src="./images/meerklass-viridis.png"
+        style="min-width:30%; max-width:40%; min-height:50px;max-height:200px;"></br>
       <h4 class="w3-text-white" style="font-size:20px">MeerKAT Large Area Synoptic Survey</h4><br>
-      <h4 class="w3-text-white" style="font-size:20px"><a href='./HIdata.html' > HI Intensity Mapping Data Release here</a> </h4>
-      <h4 class="w3-text-white" style="font-size:20px"><a href='./OTFdata.html' > OTF radio continuum Data Release here</a> </h4>
+      <h4 class="w3-text-white" style="font-size:20px"><a href='./HIdata.html'> HI Intensity Mapping Data Release
+          </a> </h4>
+      <h4 class="w3-text-white" style="font-size:20px"><a href='./OTFdata.html'> OTF radio continuum Data Release
+          </a> </h4>
 
     </div>
   </div>
- 
 
-<!-- start page content -->
-<div class="w3-content" style="max-width:1400px;margin-top:46px;margin-bottom:46px; ">
 
-<!-- Collaboration Container -->
-<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="collab">
-<h2>The MeerKLASS Collaboration</h2>
-<p class=w3-justify>We are an international collaboraton of astronomers working on cosmology with radio surveys. Our survey uses the emission from cold gas namely Neutral Hydrogen (HI) to trace the position of galaxies and through that the distribution of matter. Rather than detecting individual galaxies, we are employing the technique of HI intensity mapping to detect the combined emission from many galaxies in a continuous low-resolution map. The HI distribution in the intensity maps can be used to measure the underlying cosmology and through that constrain parameters such as the expansion rate of the Universe. MeerKLASS is a survey conducted with the South African telescope MeerKAT creating HI intensity maps of the Universe redshift 1.5, equivalent to mapping the past 9 billion years of the Universe's evolution. So far, we have robustly detected the cosmological signal in our maps at z=0.44 and currently we are surveying the Southern Sky building up towards many thousand square degrees of sky coverage. You can find more details on our HI inetnsity mapping survey area as well as HI intensity mapping data release  <a href="./HIdata.html">here</a>. </p>
-<h2>Our Science</h2>
-<div class="w3-row-padding">
-    <div class="w3-col l8 12">
-      <p class=w3-justify>The <a target="blank" href="https://www.sarao.ac.za/science/meerkat/">MeerKAT radio array </a> based in the Karoo desert in South Africa is a state-of-the-art IM instruments that can be used in a “single-dish” 
-     mode to access the large cosmic scales that are not accessible to the interferometer, while achieving massive survey speeds compared to actual 
-     single dish telescopes. The MeerKLASS collaboration(MeerKAT Large Area Synoptic Survey) has pioneered the approach of using an entire array in a
-     fast-scanning multi-dish autocorrelation mode. We developed a single-dish analysis pipeline successfully calibrating the dual-polarisation 
-     autocorrelation data from 64 dishes using the L-band receivers and 11h of data. We produced accurate maps of point sources and diffuse Galactic 
-     emission, extracting its spectral index over a 300 deg2 patch of the sky. We were also able to measure the cosmological clustering signal from
-     MeerKAT intensity maps and WiggleZ galaxies, achieving a 7.7σ detection of the cross-correlation power spectrum in the RFI-free frequency range 
-     1015–973 MHz (0.40 < z < 0.46). Combining all the dishes, we achieved an equivalent single-dish observing time of over 600h, making this one of 
-     the most sensitive HI IM observations to date. In 2022 a short pilot observation in the UHF band over the same area was also 
-     performed, producing calibrated sky maps over the 550–1050 MHz band and confirming that our pipeline can be successfully applied
-     in the UHF. Ongoing deeper observations in UHF have the goal of producing the first direct measurements of the HI power spectrum 
-     over a wide redshift range and detecting the Baryon Acoustic Oscillation (BAO) scale (~150 Mpc) with SNR ≈ 4–8, and making a 2% measurement 
-     of the power spectrum on ultra-large (~1 Gpc) scales around the matter-radiation equality peak. </p>
+  <!-- start page content -->
+  <div class="w3-content" style="max-width:1200px;margin-top:46px;margin-bottom:46px; ">
 
-     </div>
-            <div class="w3-col l4 12">
-             <!-- Image of location/map -->
-             <img src="./images/Calibration.png" class="w3-image" style="width:100%;">
-             <p> The image above shows our custom-built calibration pipeline developed by Jingying Wang.
-            </div>
-         </div>
+    <!-- Collaboration Container -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="collab">
+      <h2>The MeerKLASS Collaboration</h2>
+      <p class=w3-justify>We are an international collaboraton of astronomers working on cosmology with radio surveys
+        using the MeerKAT telescope.
+        Our survey uses the emission from cold gas namely Neutral Hydrogen (HI) to trace the position of galaxies and
+        through that the distribution
+        of matter. Rather than detecting individual galaxies, we are employing the technique of HI intensity mapping to
+        detect the combined emission
+        from many galaxies in a continuous low-resolution map. The HI distribution in the intensity maps can be used to
+        measure the underlying cosmology
+        and through that constrain parameters such as the expansion rate of the Universe. MeerKLASS is a survey
+        conducted with the South African telescope
+        MeerKAT creating HI intensity maps of the Universe redshift 1.5, equivalent to mapping the past 9 billion years
+        of the Universe's evolution.
+        So far, we have robustly detected the cosmological signal in our maps at z=0.44 and currently we are surveying
+        the Southern Sky building for higher redshifts up towards
+        many thousand square degrees of sky coverage. You can find more details on our HI intensity mapping survey area
+        as well as HI intensity mapping data release <b> <a href="./HIdata.html">here</a></b>. </p>
+      <h2>Our Science</h2>
+      <div class="w3-row-padding">
+        <div class="w3-col l8 12">
+          <p class=w3-justify>The <a target="blank" href="https://www.sarao.ac.za/science/meerkat/">MeerKAT radio array
+            </a> based in the Karoo desert in
+            South Africa is a world-class radio interferometer that can be used as a “single-dish”
+            array to access the large cosmic scales that are not accessible to the interferometer, while achieving
+            massive survey speeds compared to actual
+            single dish telescopes. The MeerKLASS collaboration (MeerKAT Large Area Synoptic Survey) has pioneered the
+            approach of using an entire array in a
+            fast-scanning multi-dish autocorrelation mode. We developed a single-dish analysis pipeline successfully
+            calibrating the dual-polarisation
+            autocorrelation data from 64 dishes using the L-band receivers and 11h of data. We produced accurate maps of
+            point sources and diffuse Galactic
+            emission, extracting its spectral index over a 300 deg2 patch of the sky. We were also able to measure the
+            cosmological clustering signal from
+            MeerKAT intensity maps and WiggleZ galaxies, achieving a 7.7σ detection of the cross-correlation power
+            spectrum in the RFI-free frequency range
+            1015–973 MHz (0.40 < z < 0.46). Combining all the dishes, we achieved an equivalent single-dish observing
+              time of over 600h, making this one of the most sensitive HI IM observations to date. In 2022 a short pilot
+              observation in the UHF band over the same area was also performed, producing calibrated sky maps over the
+              550–1050 MHz band and confirming that our pipeline can be successfully applied in the UHF. Ongoing deeper
+              observations in UHF have the goal of producing the first direct measurements of the HI power spectrum over
+              a wide redshift range and detecting the Baryon Acoustic Oscillation (BAO) scale (~150 Mpc) with SNR ≈ 4–8,
+              and making a 2% measurement of the power spectrum on ultra-large (~1 Gpc) scales around the
+              matter-radiation equality peak. </p>
+
+        </div>
+        <div class="w3-col l4 12">
+          <!-- Image of location/map -->
+          <img src="./images/Calibration.png" class="w3-image" style="width:100%;">
+          <p> The image above shows our custom-built calibration pipeline developed by Jingying Wang.
+        </div>
       </div>
-</div>
+    </div>
 
 
 
-<!-- Work Row -->
-<div class="w3-row-padding w3-theme-l1" >
-<h2>Papers</h2>
-<h4> A list of all MeerKLASS publications can be found in this <a target="_blank" href="https://ui.adsabs.harvard.edu/public-libraries/22LxhsO-TAaJMkjYqtZgIA" > ads library </a> </h4>
 
-<div class="w3-third">
-<div class="w3-card w3-white">
-  <img src="./images/RFIsatellites.png" alt="influence of satellites on power spectrum" style="width:90%">
-  <div class="w3-container">
-  <h3><a target="blank" href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.536.1035E/abstract">Radio frequency interference from radio navigation satellite systems: simulations and comparison to MeerKAT single-dish data</a>  </h3>
-  
-  <p>Radio frequency interference (RFI) is emitted from various sources, terrestrial or orbital, and creates a nuisance for ground-based 21-cm experiments. In particular, single-dish observations will be highly susceptible to RFI due to their wide primary beam and sensitivity. This work aimed to simulate the contamination effects from the Radio Navigational Satellite System (RNSS) within the 1100-1350 (MHz) frequency band. The simulation can be divided into two parts: (i) satellite positioning, emission power, and the beam response on the telescope, and (ii) calibration of the satellite signals to data to improve the original model. We utilize previously observed single-dish L-band data from the Meer-Karoo Array Telescope (MeerKAT), which requires special calibration to account for regions contaminated by satellite-based RFI. We find that we can recreate the satellite contamination with high accuracy around its peak frequencies provided the satellite is not too close to the telescope's pointing direction. The simulation can predict satellite movements and signals for past and future observations, aiding in RFI avoidance and testing novel cleaning methods. The predicted signal sits below the noise in the target cosmology window in the L band (970-1015 MHz) making it difficult to confirm any out-of-band emission from satellites. However, in our simulations, this contamination still overwhelmed the 21-cm auto-power spectrum. Nevertheless, it is possible to detect the signal in cross-correlations after mild foreground cleaning. Whether such out of band contamination does exist will require further characterization of the satellite signals far away from their peak frequencies.
+    <!-- Work Row -->
+    <div class="w3-row-padding w3-theme-l1">
+      <h2>Selected MeerKLASS Papers</h2>
+      <h4> A list of all MeerKLASS publications can be found in this <a target="_blank"
+          href="https://ui.adsabs.harvard.edu/public-libraries/22LxhsO-TAaJMkjYqtZgIA"> ads library </a> </h4>
 
-</p>
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/RFIsatellites.png" alt="influence of satellites on power spectrum" style="width:90%">
+          <div class="w3-container">
+            <h3><a target="blank" href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.536.1035E/abstract">Radio frequency
+                interference from radio navigation satellite systems: simulations and comparison to MeerKAT single-dish
+                data</a> </h3>
+
+            <p>Radio frequency interference (RFI) is emitted from various sources, terrestrial or orbital, and creates a
+              nuisance for ground-based 21-cm experiments. In particular, single-dish observations will be highly
+              susceptible to RFI due to their wide primary beam and sensitivity. This work aimed to simulate the
+              contamination effects from the Radio Navigational Satellite System (RNSS) within the 1100-1350 (MHz)
+              frequency band. The simulation can be divided into two parts: (i) satellite positioning, emission power,
+              and the beam response on the telescope, and (ii) calibration of the satellite signals to data to improve
+              the original model. We utilize previously observed single-dish L-band data from the Meer-Karoo Array
+              Telescope (MeerKAT), which requires special calibration to account for regions contaminated by
+              satellite-based RFI. We find that we can recreate the satellite contamination with high accuracy around
+              its peak frequencies provided the satellite is not too close to the telescope's pointing direction. The
+              simulation can predict satellite movements and signals for past and future observations, aiding in RFI
+              avoidance and testing novel cleaning methods. The predicted signal sits below the noise in the target
+              cosmology window in the L band (970-1015 MHz) making it difficult to confirm any out-of-band emission from
+              satellites. However, in our simulations, this contamination still overwhelmed the 21-cm auto-power
+              spectrum. Nevertheless, it is possible to detect the signal in cross-correlations after mild foreground
+              cleaning. Whether such out of band contamination does exist will require further characterization of the
+              satellite signals far away from their peak frequencies.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/PS_HI2021LBand.png" alt="Power spectrum from deep 2021 L-Band data with GAMA galaxies"
+            style="width:90%">
+          <div class="w3-container">
+            <h3><a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.537.3632M/abstract" target="_blank"
+                rel="noopener noreferrer">MeerKLASS L-band deep-field intensity maps: entering the H I dominated
+                regime</a></h3>
+
+            <p> We present results from MeerKAT single-dish H I intensity maps, the final observations to be performed
+              in L-band in the MeerKAT Large Area Synoptic Survey (MeerKLASS) campaign. The observations represent the
+              deepest single-dish H I intensity maps to date, produced from 41 repeated scans over 236deg2
+              , providing 62 h of observational data for each of the 64 dishes before flagging. By introducing an
+              iterative self-calibration process, the estimated thermal noise of the reconstructed maps is limited to
+              ∼1.21
+              mK ( 1.2×
+              the theoretical noise level). This thermal noise will be subdominant relative to the H I fluctuations on
+              large scales ( k≲0.15hMpc−1
+              ), which demands upgrades to power spectrum analysis techniques, particularly for covariance estimation.
+              In this work, we present the improved MeerKLASS analysis pipeline, validating it on both a suite of mock
+              simulations and a small sample of overlapping spectroscopic galaxies from the Galaxy And Mass Assembly
+              (GAMA) survey. Despite only overlapping with ∼25 per cent
+              of the MeerKLASS deep field, and a conservative approach to covariance estimation, we still obtain a >4σ
+              detection of the cross-power spectrum between the intensity maps and the 2269 galaxies at the narrow
+              redshift range 0.39 < z 0.46 . We briefly discuss the H I autopower spectrum from these data, the
+                detection of which will be the focus of follow-up work. For the first time with MeerKAT single-dish
+                intensity maps, we also present evidence of H I emission from stacking the maps onto the positions of
+                the GAMA galaxies. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/FGremovalstudy2019.png" alt="HI cross power spectrum " style="width:90%">
+          <div class="w3-container">
+            <h3><a href="https://ui.adsabs.harvard.edu/abs/2024arXiv241206750C/abstract" target="_blank"
+                rel="noopener noreferrer">Hydrogen intensity mapping with MeerKAT: Preserving cosmological signal by
+                optimising contaminant separation</a></h3>
+
+            <p>Removing contaminants is a delicate yet crucial step in neutral hydrogen (HI) intensity mapping, often
+              considered the technique's greatest challenge. Here, we address this challenge by analysing HI intensity
+              maps of about 100
+              deg 2
+              at redshift z≈0.4
+              collected by the MeerKAT radio telescope, a SKA Observatory (SKAO) precursor, with a combined 10.5-hour
+              observation. Using unsupervised statistical methods, we remove the contaminating foreground emission and
+              systematically test step-by-step common pre-processing choices to facilitate the cleaning process. We also
+              introduce and test a novel multiscale approach, where data is redundantly decomposed into subsets
+              referring to different spatial scales (large and small), and the cleaning procedure is performed
+              independently. We confirm the detection of the HI cosmological signal in cross-correlation with an
+              ancillary galactic data set without the need to correct for signal loss. In the best set-up reached, we
+              constrain the HI distribution through the combination of its cosmic abundance ( ΩHI
+              ) and linear clustering bias ( bHI
+              ) up to a cross-correlation coefficient ( r
+              ) and measure ΩHIbHIr=[0.93±0.17]×10−3
+              with ≈6σ
+              confidence. The measurement is independent of scale cuts at both edges of the probed scale range (
+              0.04≲k≲0.3h
+              Mpc −1
+              ), corroborating its robustness. Our new pipeline has successfully found an optimal compromise in
+              separating contaminants without incurring a catastrophic signal loss, instilling more confidence in the
+              outstanding science we can deliver with MeerKAT on the path towards HI intensity mapping surveys with the
+              full SKAO.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="w3-row-padding w3-theme-l1">
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/MKxWiggleZPk.png" alt="HI-galaxy cross-power spectrum" style="width:90%">
+          <div class="w3-container">
+            <h3><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.6262C/abstract">H I intensity mapping with
+                MeerKAT: power spectrum detection in cross-correlation with WiggleZ galaxies</a> </h3>
+
+            <p>We present a detection of correlated clustering between MeerKAT radio intensity maps and galaxies from
+              the WiggleZ Dark Energy Survey. We find a 7.7σ detection of the cross-correlation power spectrum, the
+              amplitude of which is proportional to the product of the HI
+              density fraction ( ΩHI), HI bias ( bHI), and the cross-correlation coefficient (r). We therefore obtain
+              the constraint ΩHIbHIr=[0.86±0.10(stat)±0.12(sys)]×10−3, at an effective scale of keff ∼ 0.13hMpc−1
+              . The intensity maps were obtained from a pilot survey with the MeerKAT telescope, a 64-dish pathfinder
+              array to the SKA Observatory (SKAO). The data were collected from 10.5 h of observations using MeerKAT's
+              L-band receivers over six nights covering the 11 h field of WiggleZ, in the frequency range 1015-973 MHz
+              (0.400 &lt;z&lt; 0.459 in redshift). This detection is the first practical demonstration of the multidish
+              autocorrelation intensity mapping technique for cosmology. This marks an important milestone in the
+              roadmap for the cosmology science case with the full SKAO.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/MKmap.png" alt="MeerKLASS map" style="width:90%">
+          <div class="w3-container">
+            <h3><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.3698W/abstract" target="_blank"
+                rel="noopener noreferrer">H I intensity mapping with MeerKAT: calibration pipeline for multidish
+                autocorrelation observations</a></h3>
+
+            <p> While most purpose-built 21-cm intensity mapping experiments are close-packed interferometer arrays,
+              general-purpose dish arrays should also be capable of measuring the cosmological 21-cm signal. This can be
+              achieved most efficiently if the array is used as a collection of scanning autocorrelation dishes rather
+              than as an interferometer. As a first step towards demonstrating the feasibility of this observing
+              strategy, we show that we are able to successfully calibrate dual-polarization autocorrelation data from
+              64 MeerKAT dishes in the L band (856-1712 MHz, 4096 channels), with 10.5 h of data retained from six
+              nights of observing. We describe our calibration pipeline, which is based on multilevel radio frequency
+              interference flagging, periodic noise diode injection to stabilize gain drifts, and an absolute
+              calibration based on a multicomponent sky model. We show that it is sufficiently accurate to recover maps
+              of diffuse celestial emission and point sources over a 10° × 30° patch of the sky overlapping with the
+              WiggleZ 11-h field. The reconstructed maps have a good level of consistency between per-dish maps and
+              external data sets, with the estimated thermal noise limited to 1.4 × the theoretical noise level (~2 mK).
+              The residual maps have rms amplitudes below 0.1 K, corresponding to &lt; 1 per cent
+              of the model temperature. The reconstructed Galactic H I intensity map shows excellent agreement with the
+              Effelsberg-Bonn H I Survey, and the flux of the radio galaxy 4C + 03.18 is recovered to within 3.6 per
+              cent, which demonstrates that the autocorrelation can be successfully calibrated to give the zero-spacing
+              flux and potentially help in the imaging of MeerKAT interferometric data.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/MeerKLASSPk.png" alt="HI power spectrum forecast" style="width:90%">
+          <div class="w3-container">
+            <h3><a href="https://ui.adsabs.harvard.edu/abs/2016mks..confE..32S/abstract" target="_blank"
+                rel="noopener noreferrer"> A Large Sky Survey with MeerKAT</a></h3>
+
+            <p>We discuss the ground-breaking science that will be possible with a wide area survey, using
+              the MeerKAT telescope, known as MeerKLASS (MeerKAT Large Area Synoptic Survey). The
+              current specifications of MeerKAT make it a great fit for cosmological applications, which require
+              large volumes. In particular, a large survey over ∼ 4,000 deg2
+              for ∼ 4,000 hours will potentially
+              provide the first ever measurements of the baryon acoustic oscillations using the 21cm intensity
+              mapping technique, with enough accuracy to impose constraints on the nature of dark energy. The
+              combination with multi-wavelength data will give unique additional information, such as the first
+              constraints on primordial non-Gaussianity using the multi-tracer technique, as well as a better
+              handle on foregrounds and systematics. The survey will also produce a large continuum galaxy
+              sample down to a depth of 5 µJy in L-band, unmatched by any other concurrent telescope, which
+              will allow to study the large-scale structure of the Universe out to high redshifts. Finally, the same
+              survey will supply unique information for a range of other science applications, including a large
+              statistical investigation of galaxy clusters, and the discovery of rare high-redshift AGN that can be
+              used to probe the epoch of reionization as well as produce a rotation measure map across a huge
+              swathe of the sky. The MeerKLASS survey will be a crucial step on the road to using SKA1-MID
+              for cosmological applications, as described in the top priority SKA key science projects.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
+
   </div>
-</div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="contact">
+      <h2>Contact</h2>
+      For more details, please contact the PIs or request membership via <a target="_blank"
+        href="https://airtable.com/app45AQBOJnMiyX8k/pagEmTNiqXNPVSTog/form"> this form </a>.
+    </div>
 
 
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+      <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
 
-<div class="w3-third">
-<div class="w3-card w3-white">
-  <img src="./images/PS_HI2021LBand.png" alt="Power spectrum from deep 2021 L-Band data with GAMA galaxies" style="width:90%">
-  <div class="w3-container">
-  <h3><a  href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.537.3632M/abstract" target="_blank" rel="noopener noreferrer">MeerKLASS L-band deep-field intensity maps: entering the H I dominated regime</a></h3>
-  
-  <p> We present results from MeerKAT single-dish H I intensity maps, the final observations to be performed in L-band in the MeerKAT Large Area Synoptic Survey (MeerKLASS) campaign. The observations represent the deepest single-dish H I intensity maps to date, produced from 41 repeated scans over  236deg2
- , providing 62 h of observational data for each of the 64 dishes before flagging. By introducing an iterative self-calibration process, the estimated thermal noise of the reconstructed maps is limited to  ∼1.21
-  mK ( 1.2×
-  the theoretical noise level). This thermal noise will be subdominant relative to the H I fluctuations on large scales ( k≲0.15hMpc−1
- ), which demands upgrades to power spectrum analysis techniques, particularly for covariance estimation. In this work, we present the improved MeerKLASS analysis pipeline, validating it on both a suite of mock simulations and a small sample of overlapping spectroscopic galaxies from the Galaxy And Mass Assembly (GAMA) survey. Despite only overlapping with  ∼25  per cent
-  of the MeerKLASS deep field, and a conservative approach to covariance estimation, we still obtain a  >4σ
-  detection of the cross-power spectrum between the intensity maps and the 2269 galaxies at the narrow redshift range  0.39 < z 0.46
- . We briefly discuss the H I autopower spectrum from these data, the detection of which will be the focus of follow-up work. For the first time with MeerKAT single-dish intensity maps, we also present evidence of H I emission from stacking the maps onto the positions of the GAMA galaxies. </p>
-  </div>
-  </div>
-</div>
+  <script>
 
-<div class="w3-third">
-<div class="w3-card w3-white">
-  <img src="./images/FGremovalstudy2019.png" alt="HI cross power spectrum " style="width:90%">
-  <div class="w3-container">
-  <h3><a href="https://ui.adsabs.harvard.edu/abs/2024arXiv241206750C/abstract" target="_blank" rel="noopener noreferrer">Hydrogen intensity mapping with MeerKAT: Preserving cosmological signal by optimising contaminant separation</a></h3>
-  
-  <p>Removing contaminants is a delicate yet crucial step in neutral hydrogen (HI) intensity mapping, often considered the technique's greatest challenge. Here, we address this challenge by analysing HI intensity maps of about  100
-  deg 2
-  at redshift  z≈0.4
-  collected by the MeerKAT radio telescope, a SKA Observatory (SKAO) precursor, with a combined 10.5-hour observation. Using unsupervised statistical methods, we remove the contaminating foreground emission and systematically test step-by-step common pre-processing choices to facilitate the cleaning process. We also introduce and test a novel multiscale approach, where data is redundantly decomposed into subsets referring to different spatial scales (large and small), and the cleaning procedure is performed independently. We confirm the detection of the HI cosmological signal in cross-correlation with an ancillary galactic data set without the need to correct for signal loss. In the best set-up reached, we constrain the HI distribution through the combination of its cosmic abundance ( ΩHI
- ) and linear clustering bias ( bHI
- ) up to a cross-correlation coefficient ( r
- ) and measure  ΩHIbHIr=[0.93±0.17]×10−3
-  with  ≈6σ
-  confidence. The measurement is independent of scale cuts at both edges of the probed scale range ( 0.04≲k≲0.3h
- Mpc −1
- ), corroborating its robustness. Our new pipeline has successfully found an optimal compromise in separating contaminants without incurring a catastrophic signal loss, instilling more confidence in the outstanding science we can deliver with MeerKAT on the path towards HI intensity mapping surveys with the full SKAO.</p>
-  </div>
-  </div>
-</div>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
 
-</div>
-<div class="w3-row-padding w3-theme-l1">
-<div class="w3-third">
-<div class="w3-card w3-white">
-  <img src="./images/MKxWiggleZPk.png" alt="HI-galaxy cross-power spectrum" style="width:90%">
-  <div class="w3-container">
-  <h3><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.6262C/abstract">H I intensity mapping with MeerKAT: power spectrum detection in cross-correlation with WiggleZ galaxies</a>  </h3>
-  
-  <p>We present a detection of correlated clustering between MeerKAT radio intensity maps and galaxies from the WiggleZ Dark Energy Survey. We find a 7.7σ detection of the cross-correlation power spectrum, the amplitude of which is proportional to the product of the  HI
-  density fraction ( ΩHI),  HI bias ( bHI), and the cross-correlation coefficient (r). We therefore obtain the constraint  ΩHIbHIr=[0.86±0.10(stat)±0.12(sys)]×10−3, at an effective scale of  keff ∼ 0.13hMpc−1
-. The intensity maps were obtained from a pilot survey with the MeerKAT telescope, a 64-dish pathfinder array to the SKA Observatory (SKAO). The data were collected from 10.5 h of observations using MeerKAT's L-band receivers over six nights covering the 11 h field of WiggleZ, in the frequency range 1015-973 MHz (0.400  &lt;z&lt;  0.459 in redshift). This detection is the first practical demonstration of the multidish autocorrelation intensity mapping technique for cosmology. This marks an important milestone in the roadmap for the cosmology science case with the full SKAO.</p>
-  </div>
-  </div>
-</div>
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
 
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "300px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
 
-<div class="w3-third">
-<div class="w3-card w3-white">
-  <img src="./images/MKmap.png" alt="MeerKLASS map" style="width:90%">
-  <div class="w3-container">
-  <h3><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.3698W/abstract" target="_blank" rel="noopener noreferrer">H I intensity mapping with MeerKAT: calibration pipeline for multidish autocorrelation observations</a></h3>
-  
-  <p> While most purpose-built 21-cm intensity mapping experiments are close-packed interferometer arrays, general-purpose dish arrays should also be capable of measuring the cosmological 21-cm signal. This can be achieved most efficiently if the array is used as a collection of scanning autocorrelation dishes rather than as an interferometer. As a first step towards demonstrating the feasibility of this observing strategy, we show that we are able to successfully calibrate dual-polarization autocorrelation data from 64 MeerKAT dishes in the L band (856-1712 MHz, 4096 channels), with 10.5 h of data retained from six nights of observing. We describe our calibration pipeline, which is based on multilevel radio frequency interference flagging, periodic noise diode injection to stabilize gain drifts, and an absolute calibration based on a multicomponent sky model. We show that it is sufficiently accurate to recover maps of diffuse celestial emission and point sources over a 10° × 30° patch of the sky overlapping with the WiggleZ 11-h field. The reconstructed maps have a good level of consistency between per-dish maps and external data sets, with the estimated thermal noise limited to 1.4 × the theoretical noise level (~2 mK). The residual maps have rms amplitudes below 0.1 K, corresponding to &lt; 1 per cent
-  of the model temperature. The reconstructed Galactic H I intensity map shows excellent agreement with the Effelsberg-Bonn H I Survey, and the flux of the radio galaxy 4C + 03.18 is recovered to within 3.6 per cent, which demonstrates that the autocorrelation can be successfully calibrated to give the zero-spacing flux and potentially help in the imaging of MeerKAT interferometric data.</p>
-  </div>
-  </div>
-</div>
+    // Close side navigation
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
 
-<div class="w3-third">
-<div class="w3-card w3-white">
-  <img src="./images/MeerKLASSPk.png" alt="HI power spectrum forecast" style="width:90%">
-  <div class="w3-container">
-  <h3><a href="https://ui.adsabs.harvard.edu/abs/2016mks..confE..32S/abstract" target="_blank" rel="noopener noreferrer"> A Large Sky Survey with MeerKAT</a></h3>
-  
-  <p>We discuss the ground-breaking science that will be possible with a wide area survey, using
-the MeerKAT telescope, known as MeerKLASS (MeerKAT Large Area Synoptic Survey). The
-current specifications of MeerKAT make it a great fit for cosmological applications, which require
-large volumes. In particular, a large survey over ∼ 4,000 deg2
-for ∼ 4,000 hours will potentially
-provide the first ever measurements of the baryon acoustic oscillations using the 21cm intensity
-mapping technique, with enough accuracy to impose constraints on the nature of dark energy. The
-combination with multi-wavelength data will give unique additional information, such as the first
-constraints on primordial non-Gaussianity using the multi-tracer technique, as well as a better
-handle on foregrounds and systematics. The survey will also produce a large continuum galaxy
-sample down to a depth of 5 µJy in L-band, unmatched by any other concurrent telescope, which
-will allow to study the large-scale structure of the Universe out to high redshifts. Finally, the same
-survey will supply unique information for a range of other science applications, including a large
-statistical investigation of galaxy clusters, and the discovery of rare high-redshift AGN that can be
-used to probe the epoch of reionization as well as produce a rotation measure map across a huge
-swathe of the sky. The MeerKLASS survey will be a crucial step on the road to using SKA1-MID
-for cosmological applications, as described in the top priority SKA key science projects.</p>
-  </div>
-  </div>
-</div>
-
-</div>
-
-
-
-
-</div>
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="contact">
-<h2>Contact</h2>
-For more details, please contact the PIs or request membership via <a target="_blank"  href="https://airtable.com/app45AQBOJnMiyX8k/pagEmTNiqXNPVSTog/form"> this form </a>.
-</div>
-  
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
-
-<script>
-
-  // Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 
 </body>
+
 </html>
