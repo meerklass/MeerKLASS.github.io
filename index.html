@@ -26,7 +26,8 @@
       <a href="./HIdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">HI Intensity Mapping Data</a>
       <a href="./OTFdata.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">OTF Data</a>
       <a href="./glossary.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Glossary</a>
-      <a href="https://meerklass-rfi-dashboard.streamlit.app/" target="blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Observations RFI Dashboard</a>
+      <a href="https://meerklass-rfi-dashboard.streamlit.app/" target="blank"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Observations RFI Dashboard</a>
     </div>
 
     <!-- Navbar on small screens -->
@@ -36,7 +37,8 @@
       <a href="./HIdata.html" class="w3-bar-item w3-button">HI Intensity Mapping Data</a>
       <a href="./OTFdata.html" class="w3-bar-item w3-button">OTF Data</a>
       <a href="./glossary.html" class="w3-bar-item w3-button">Glossary</a>
-      <a href="https://meerklass-rfi-dashboard.streamlit.app/" target="blank" target="blank" class="w3-bar-item w3-button"> Observations RFI Dashboard</a>
+      <a href="https://meerklass-rfi-dashboard.streamlit.app/" target="blank" target="blank"
+        class="w3-bar-item w3-button"> Observations RFI Dashboard</a>
     </div>
   </div>
 
@@ -50,11 +52,16 @@
       <img src="./images/meerklass-viridis.png"
         style="min-width:30%; max-width:40%; min-height:50px;max-height:200px;"></br>
       <h4 class="w3-text-white" style="font-size:20px">MeerKAT Large Area Synoptic Survey</h4><br>
-      <h4 class="w3-text-white" style="font-size:20px"><a href='./HIdata.html'> HI Intensity Mapping Data Release
-          </a> </h4>
-      <h4 class="w3-text-white" style="font-size:20px"><a href='./OTFdata.html'> OTF radio continuum Data Release
-          </a> </h4>
-
+      
+      <div  class="w3-container w3-center w3-padding w3-content" style="max-width:1000px; background-color:rgba(0,0,0,0.5);"> 
+        <h4 class="w3-text-white" style="font-size:20px"> First MeerKLASS auto-detection  </h4>
+        <p class="w3-text-white w3-center w3-justify "> After a decade of preparation and work, we report our first measurement of the large-scale clustering of
+        cosmic hydrogen via HI Intensity Mapping, advancing a technique that could transform how cosmologists chart the Universe.
+        For this detection, the team analysed MeerKAT observations across approximately 250 square degrees of sky - roughly the area of 1250 full moons. 
+        The observed signal originated about 4.5 billion years ago at redshift 0.42, derived from observations at 971 MHz to 1023 MHz performed with the L-Band receiver of the MeerKAT telescope.
+        We have released the data underlying the detectiom, which can be accessed <a href="./HIdata.html">here</a>. All details of our analysis and detection can be found in <a target='blank' href='https://ui.adsabs.harvard.edu/abs/2026MNRAS.tmp.1936B/abstract'>MeerKLASS et al (2026)</a>.
+      </p>
+        </div>
     </div>
   </div>
 
@@ -65,7 +72,7 @@
     <!-- Collaboration Container -->
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="collab">
       <h2>The MeerKLASS Collaboration</h2>
-      <p class=w3-justify>We are an international collaboraton of astronomers working on cosmology with radio surveys
+      <p class="w3-justify">We are an international collaboraton of astronomers working on cosmology with radio surveys
         using the MeerKAT telescope.
         Our survey uses the emission from cold gas namely Neutral Hydrogen (HI) to trace the position of galaxies and
         through that the distribution
@@ -77,9 +84,16 @@
         conducted with the South African telescope
         MeerKAT creating HI intensity maps of the Universe redshift 1.5, equivalent to mapping the past 9 billion years
         of the Universe's evolution.
-        So far, we have robustly detected the cosmological signal in our maps at z=0.44 and currently we are surveying
-        the Southern Sky building for higher redshifts up towards
-        many thousand square degrees of sky coverage. You can find more details on our HI intensity mapping survey area
+        So far, we have robustly detected the cosmological signal in our maps at z=0.44 in two independent fields of
+        hundreds of square degrees area each,
+        using corss-correlations with galaxy surveys. We have recently detected and published the HI signal in
+        auto-correlation using data subsets,
+        more details can be found in <a target='blank'
+          href='https://ui.adsabs.harvard.edu/abs/2026MNRAS.tmp.1936B/abstract'>MeerKLASS et al (2026)</a>.
+
+        We are currently surveying the Southern Sky building for higher redshifts up towards
+        many thousand square degrees of sky coverage under an eXtra Large Project at SARAO. You can find more details on
+        our HI intensity mapping survey area
         as well as HI intensity mapping data release <b> <a href="./HIdata.html">here</a></b>. </p>
       <h2>Our Science</h2>
       <div class="w3-row-padding">
@@ -126,6 +140,104 @@
       <h4> A list of all MeerKLASS publications can be found in this <a target="_blank"
           href="https://ui.adsabs.harvard.edu/public-libraries/22LxhsO-TAaJMkjYqtZgIA"> ads library </a> </h4>
 
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/RFIsatellites.png" alt="influence of satellites on power spectrum" style="width:90%">
+          <div class="w3-container">
+            <h3><a target="blank" href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.tmp.1936B/abstract">
+                HI intensity mapping with MeerKAT: A measurement of the 21-cm auto-spectrum on cosmological scales</a>
+            </h3>
+
+            <p>We report a direct measurement of the 21-cm signal from neutral hydrogen (HI) via the intensity mapping
+              technique at redshift z = 0.42 through its power spectrum at cosmological scales 0.095 h Mpc-1 < k < 0.245
+                h Mpc-1. We analyse intensity maps observed in the frequency range 971.2 MHz < ν < 1023.6 MHz during the
+                2021 observational campaign of the MeerKAT Large Area Synoptic Survey (MeerKLASS) spanning an area of
+                approximately 236 °2. Capitalising on the depth of this survey, we divide the data set into multiple
+                observationally independent subsets. After performing blind contaminant separation independently on each
+                subset, we exploit internal cross-correlations to suppress the instrumental noise plateau and isolate
+                the cosmological signal from residual systematics. Although the subsets' auto-spectra show the presence
+                of excess power that we deem linked to still unresolved systematics, the cross-spectra measurements
+                satisfactorily pass a battery of null and robustness tests. We introduce a multi-subset formalism to
+                infer the amplitude of the HI auto-spectrum from our internal cross-spectra measurements while
+                marginalising the potential signal loss that occurs during data processing, reaching a detection with
+                signal-to-noise ratio of 6.2. We constrain the clustering amplitude of the signal in terms of the HI
+                cosmic abundance and its linear bias, measuring 103 ΩHIbHI=1.271+1.080−0.598 . This direct measurement
+                marks a milestone in demonstrating the effectiveness of the HI intensity mapping technique for future
+                surveys with the SKA Observatory, of which MeerKAT is a precursor. </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/RFIsatellites.png" alt="influence of satellites on power spectrum" style="width:90%">
+          <div class="w3-container">
+            <h3><a target="blank" href="https://ui.adsabs.harvard.edu/abs/2025arXiv251211978C/abstract">
+                The MeerKLASS On-the-Fly continuum survey: pipeline design and validation</a> </h3>
+
+            <p>The MeerKAT Large Area Synoptic Survey (MeerKLASS) is designed to map large areas of the Southern sky for
+              cosmology using the single-dish HI intensity mapping (IM) technique, while simultaneously delivering a
+              wide, high angular-resolution interferometric survey. We present the design and first results of the
+              MeerKLASS On-the-Fly (OTF) continuum data, which exploits the visibilities recorded during fast,
+              constant-elevation scans. This observing mode enables fast commensal imaging over several hundred of
+              square degrees on a nightly basis. We describe the OTF survey strategy and pipeline, focusing on handling
+              challenges introduced by the current MeerKAT fixed-delay correlation observing mode, which causes
+              decorrelation (smearing). We implement a correction scheme based on time-dependent phase rotation,
+              direction-dependent PSF modeling, and wide-band faceted deconvolution with \texttt{DDFacet}. Using
+              UHF-band and pilot L-band data, we demonstrate the recovery of high-quality 2-second snapshot images and
+              deep mosaics over hundreds of square degrees. After smearing correction we are able to achieve a
+              resolution of 23.3
+              arcsec and 14
+              arcsec with an rms sensitivity of 35μJybeam−1
+              and 33μJybeam−1
+              in the UHF and L-band respectively. The full survey will cover 10,000deg2
+              at 544-1088 MHz, and after the delay tracking fix implemented we expect to reach ∼25μJybeam−1
+              at 14
+              arcsec resolution. The continuum OTF data products will support diverse science goals, including galaxy
+              and AGN evolution, diffuse cluster emission, large-scale structure and cosmology, rotation-measure
+              synthesis, and transient searches. MeerKLASS-OTF thus establishes an efficient path to wide-area commensal
+              surveys with MeerKAT and provides a key technical precursor for SKA-Mid.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card w3-white">
+          <img src="./images/RFIsatellites.png" alt="influence of satellites on power spectrum" style="width:90%">
+          <div class="w3-container">
+            <h3><a target="blank" href="https://ui.adsabs.harvard.edu/abs/2025ApJS..279...19C/abstract">
+                Emission-line Stacking of 21 cm Intensity Maps with MeerKLASS: Inference Pipeline and Application to the
+                L-band Deep-field Data
+              </a> </h3>
+
+            <p>We present a novel analysis of observational systematics through the emission-line stacking of the
+              MeerKLASS L-band deep-field intensity maps, following the detection in MeerKLASS Collaboration et al. A
+              stacking signal is obtained by stacking the 21 cm intensity map cubelets around the galaxy positions from
+              the GAMA survey at 0.39 ≲ z ≲ 0.46. An extensive simulation framework is built to study the viability of
+              the stacking detection, the covariance estimation, and the model inference, which are then applied to the
+              data. The statistical significance of the detection is 8.66σ when averaged into an angular map, and 7.45σ
+              when averaged into a spectrum. The stacked spectrum exhibits an oscillating component of systematics, and
+              we provide evidence that these systematics are a convolutional effect on the map data. The oscillation
+              frequency matches the diffraction from the secondary reflector into the primary beam of the MeerKAT
+              telescope. Bayesian inference can be used to constrain the systematics and the average H I emission of the
+              galaxies. The fitting of the parameters gives a constraint on the systematics frequency
+              νsys[MHz]=17.90−4.27+6.53 . The posterior of the systematics amplitude reaches the wide prior and gives
+              Asys=0.50−0.33+0.33 . A tentative measurement of the average H I mass of the sources is achieved at log10[
+              <MHI>/M⊙]=9.84−0.59+0.48 , which is an underestimation limited by the narrow redshift bin, the strong
+                degeneracy with the systematics, and the low-density galaxy sample. These shortfalls will be resolved
+                for future MeerKLASS data to enable accurate measurements of the H I density through stacking of
+                intensity maps.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="w3-row-padding w3-theme-l1">
       <div class="w3-third">
         <div class="w3-card w3-white">
           <img src="./images/RFIsatellites.png" alt="influence of satellites on power spectrum" style="width:90%">
